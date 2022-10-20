@@ -1,0 +1,24 @@
+.poster
+{
+    max-height: 226px;
+    width: 200px;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+.postersTitle
+{
+    margin-left: 50px;
+    font-weight: 700;
+    color: white;
+}
+.posters
+{   display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.posters::-webkit-scrollbar
+{
+    display: none;
+}
