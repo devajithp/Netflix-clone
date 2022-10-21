@@ -1,16 +1,30 @@
 .poster
 {
-    max-height: 226px;
-    width: 200px;
+    max-height: 300px;
+    width: 300px;
     margin-left: 30px;
     cursor: pointer;
 
 }
-.postersTitle
+.smallPoster
 {
+    max-height: 150px;
+    width: 150px;
+    margin-left: 30px;
+    cursor: pointer; 
+}
+.postersTitle
+{   margin-top: 25px;
     margin-left: 50px;
     font-weight: 700;
     color: white;
+}
+.smallPostersTitle
+{
+    margin-top: 25px;
+    margin-left: 50px;
+    font-weight:400;
+    color: white;  
 }
 .posters
 {   display: flex;
@@ -21,4 +35,11 @@
 .posters::-webkit-scrollbar
 {
     display: none;
+}
+.reactPlayer{
+  margin-top: 15px;
+}
+.genres
+{
+   
 }
