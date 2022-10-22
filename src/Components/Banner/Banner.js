@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './Banner.css'
 import { API_Key, imageUrl } from '../../Constants/Constants'
 import axios from '../../axios'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faPlay } from '@fortawesome/free-solid-svg-icons'
 
 function Banner() {
 
@@ -27,12 +29,13 @@ function Banner() {
                 <h5>{trendMovie? trendMovie.overview: ""}</h5>
             </div>
             <div className='content-buttons'>
-                <button className='play-button'>Play</button>
+                <button className='play-button'><FontAwesomeIcon style={{color:'black'}} icon={faPlay } /> Play</button>
+                
                 <button className='info-button'>More info</button>
 
             </div>
         </div>
-        <div className='fade-bottom'>
+        <div className='fade-bottom '>
 
         </div>
        

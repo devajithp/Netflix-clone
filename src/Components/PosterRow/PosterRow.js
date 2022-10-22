@@ -39,7 +39,7 @@ function PosterRow(props) {
   }
   
   return (
-    <div className='genres'>
+    <div className=''>
         <h3 className={`${props.titleClass}`}>{props.title}</h3>
         <div className='posters'>
           {
@@ -61,7 +61,10 @@ function PosterRow(props) {
        
        
       
-      { videoKey && <ReactPlayer className="reactPlayer" url={`https://www.youtube.com/watch?v=${videoKey}`}  width='100%'  />}
+      { videoKey && <ReactPlayer  playing='true' onPause={()=>
+      {
+        setVideoKey(null)
+      }} className="reactPlayer" url={`https://www.youtube.com/watch?v=${videoKey}`}  width='100%'  />}
        
        
        

@@ -1,7 +1,7 @@
 .poster
 {
     max-height: 300px;
-    width: 300px;
+    max-width: 300px;
     margin-left: 30px;
     cursor: pointer;
 
@@ -38,8 +38,11 @@
 }
 .reactPlayer{
   margin-top: 15px;
+  
 }
-.genres
-{
-   
+.poster:hover{
+   transform: scale(1.5);
+}
+.smallPoster:hover{
+    transform: scale(1.5); 
 }
