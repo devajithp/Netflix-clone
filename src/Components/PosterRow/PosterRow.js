@@ -6,13 +6,7 @@ import ReactPlayer from 'react-player/youtube'
 
 
 function PosterRow(props) {
-  const opts = {
-    height: '390',
-    width: '640',
-    playerVars: {
-      
-      autoplay: 0,
-    }}
+ 
 
   const[movies,setMovies]=useState([])
   const[videoKey,setVideoKey]=useState("")
